@@ -7,6 +7,7 @@ body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	background-color: #42c9c2;
 	color: #FFFFFF;
+	font-weight: lighter;
 }
 
 a {
@@ -27,6 +28,21 @@ a {
 	margin-bottom: 30px;
 }
 
+.lupaPass:hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+b:hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+.disclaimer {
+	font-size: 12px;
+	margin-top: 20px;
+}
+
 input[type=text], input[type=password] {
 	width: 300px;
 	background-color: #1bada4;
@@ -42,7 +58,7 @@ input[type=submit] {
 	background-color: transparent;
 	padding: 10px;
 	color: #FFFFFF;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #a7e3e0;
 	margin-bottom: 10px;
 	font-size: 14px;
 }
@@ -74,6 +90,6 @@ button:hover {
 
 hr {
 	width: 400px;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #a7e3e0;
 	margin-bottom: 40px;
 }

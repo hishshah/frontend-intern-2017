@@ -12,7 +12,21 @@
     "express": "~4.15.2",
     "morgan": "~1.8.1",
     "pug": "~2.0.0-beta11",
+    "rand-token": "^0.3.0",
     "serve-favicon": "~2.4.2",
     "stylus": "0.54.5"
-  }
+  },
+  "description": "## Test Prelo Front-end Developer Intern",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hishshah/frontend-intern-2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hishshah/frontend-intern-2017/issues"
+  },
+  "homepage": "https://github.com/hishshah/frontend-intern-2017#readme"
 }

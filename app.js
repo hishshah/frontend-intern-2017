@@ -5,12 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var stylus = require('stylus');
+var randtoken = require('rand-token');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var lovelist = require('./routes/lovelist');
 
 var app = express();
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +31,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/lovelist', lovelist);
+
+
+app.post('/', urlencodedParser, function(req, res) {
+	var post = req.body;
+	if (post.username_or_email == 'frontend' && post.password == "intern") {
+		res.render('lovelist', {data: req.body});
+		var token = randtoken.generate(16);
+	} else {
+		res.render('error')
+	}
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

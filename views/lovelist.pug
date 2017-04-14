@@ -13,59 +13,17 @@ block content
 				p(class="p-lovelist") LOVELIST
 				hr(class="hr-lovelist-title")
 			div(id="content")
-				div(style="float: left; margin-right: 15px;")
-					<img src="images/vans.png" height="80px;" style="margin-bottom: 15px;" /> 
-				div(class="product-name") Vans Disney
-				div(class="price") Rp 720.000
-				div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
-					<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
-					span(style="margin-right: 10px;") 2	
-					<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 7
-				div(style="clear: both;")
-					hr(class="hr-lovelist-content")
-
-				div(style="float: left; margin-right: 15px;")
-					<img src="images/poster.png" height="80px;" style="margin-bottom: 15px;" /> 
-				div(class="product-name") Poster Kayu Tema Vespa
-				div(class="price") Rp 175.000
-				div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
-					<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
-					span(style="margin-right: 10px;") 0
-					<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 4
-				div(style="clear: both;")
-					hr(class="hr-lovelist-content")
-
-				div(style="float: left; margin-right: 15px;")
-					<img src="images/preloved.png" height="80px;" style="margin-bottom: 15px;" /> 
-				div(class="product-name") Preloved TOPSHOP
-				div(class="price") Rp 650.000
-				div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
-					<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
-					span(style="margin-right: 10px;") 0	
-					<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 7
-				div(style="clear: both;")
-					hr(class="hr-lovelist-content")
-
-				div(style="float: left; margin-right: 15px;")
-					<img src="images/dk084.png" height="80px;" style="margin-bottom: 15px;" /> 
-				div(class="product-name") DK084
-				div(class="price") Rp 160.000
-				div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
-					<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
-					span(style="margin-right: 10px;") 0
-					<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 4
-				div(style="clear: both;")
-					hr(class="hr-lovelist-content")
-
-				div(style="float: left; margin-right: 15px;")
-					<img src="images/jaket.png" height="80px;" style="margin-bottom: 15px;" /> 
-				div(class="product-name") Jaket Jeans
-				div(class="price") Rp 110.000
-				div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
-					<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
-					span(style="margin-right: 10px;") 0	
-					<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 4
-				div(style="clear: both; margin-bottom: 20px;")
-
+				for i in data
+					div(style="float: left; margin-right: 15px;")
+						<img src="/#{i.photo}" height="80px;" style="margin-bottom: 15px;" /> 
+					div(class="product-name")= i.name
+					div(class="price")= i.price
+					div(style="color: #dddddd; font-size: 10px; margin-top: 15px;")
+						<img src="images/comment.png" height="15px;" style="vertical-align: middle;"> 
+						span(style="margin-right: 10px;")= i.comment	
+						<img src="images/love.png" height="15px;" style="vertical-align: middle;"> 
+						span= i.loved
+					div(style="clear: both;")
+						hr(class="hr-lovelist-content")
 			div(id="footer")
 				button(class="button-lovelist") Load More

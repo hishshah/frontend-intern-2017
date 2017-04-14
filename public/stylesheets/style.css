@@ -1,5 +1,5 @@
 html {
-	width: 950px;
+	width: 500px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 	font-weight: lighter;
 }
 
-a {
+.a-login {
 	color: #FFFFFF;
 	font-weight: bold;
 }
@@ -22,7 +22,7 @@ a {
 
 .lupaPass {
 	font-size: 12px;
-	width: 610px;
+	width: 200px;
 	display: inline;
 	float: right;
 	margin-bottom: 30px;
@@ -33,7 +33,7 @@ a {
 	color: #000000;
 }
 
-b:hover {
+.b-login:hover {
 	cursor: pointer;
 	color: #000000;
 }
@@ -70,7 +70,7 @@ input[type=submit]:hover {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-button {
+.button-login {
 	width: 320px;
 	background-color: #1bada4;
 	padding: 10px;
@@ -81,15 +81,92 @@ button {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.19);
 }
 
-button:hover {
+.button-login:hover {
 	background-color: transparent;
 	color: #FFFFFF;
 	border: 1px solid #FFFFFF;
 	cursor: pointer;
 }
 
-hr {
+.hr-login {
 	width: 400px;
 	border: 1px solid #a7e3e0;
 	margin-bottom: 40px;
+}
+
+#title {
+	background-color: #f0f0f0;
+	text-align: left;
+	font-size: 20px;
+	color: #000000;
+	padding-top: 3px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	margin-bottom: none;
+	border-bottom: 1px solid #dddddd;
+}
+
+.p-lovelist {
+	line-height: 5px;
+}
+
+
+.hr-lovelist-title {
+	border: 1px solid #dddddd;
+	width: auto;
+}
+
+#content {
+	margin-top: none;
+	background-color: #FFFFFF;
+	font-size: 13px;
+	color: #000000;
+	text-align: left;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	min-height: 100px;
+}
+
+.product-name {
+	line-height: 20px;
+}
+
+.price {
+	color: #00a69c;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+.hr-lovelist-content {
+	margin-bottom: 20px;
+}
+
+#footer {
+	background-color: #f0f0f0;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 45px;
+	margin-bottom: none;
+	border-top: 1px solid #dddddd;
+}
+
+.button-lovelist {
+	background-color: #ffffff;
+	color: #00a69c;
+	border-radius: 15px;
+	padding: 5px 20px 5px 20px;
+	border: 1px solid #dddddd;
+	font-size: 12px;
+}
+
+.button-lovelist:hover {
+	cursor: pointer;
+	background-color: #dddddd;
+	color: #FFFFFF;
 }

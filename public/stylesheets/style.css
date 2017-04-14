@@ -10,6 +10,7 @@ body {
 	font-weight: lighter;
 }
 
+/* LOGIN STYLE*/
 .a-login {
 	color: #FFFFFF;
 	font-weight: bold;
@@ -94,12 +95,21 @@ input[type=submit]:hover {
 	margin-bottom: 40px;
 }
 
+
+/* LOVELIST STYLE */
+
+.header {
+	position: fixed;
+	top: 0;
+	background-color: #42c9c2;
+}
+
 #title {
 	background-color: #f0f0f0;
 	text-align: left;
 	font-size: 20px;
 	color: #000000;
-	padding-top: 3px;
+	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 10px;

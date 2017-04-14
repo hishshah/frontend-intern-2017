@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var stylus = require('stylus');
 var randtoken = require('rand-token');
+var dialog = require('dialog');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -78,7 +79,21 @@ app.post('/', urlencodedParser, function(req, res) {
 
     res.render('lovelist', {data: json});
 	} else {
-		res.render('error')
+		// res.render('error')
+    if (post.username_or_email == null || post.username_or_email == "") {
+      dialog.info('Email atau Username tidak boleh kosong');
+    } else 
+    if (post.username_or_email.length < 4) {
+      dialog.info('Email atau Username minimal 4 karakter');
+    } else 
+    if (post.password == null || post.password == "") {
+      dialog.info('Password tidak boleh kosong');
+    } else 
+    if (post.password.length < 6) {
+      dialog.info('Password minimal 6 karakter');
+    } else {
+      res.render('error');
+    }
 	}
 });
 

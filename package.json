@@ -9,12 +9,14 @@
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
+    "dialog": "^0.2.0",
     "express": "~4.15.2",
     "morgan": "~1.8.1",
     "pug": "~2.0.0-beta11",
     "rand-token": "^0.3.0",
     "serve-favicon": "~2.4.2",
-    "stylus": "0.54.5"
+    "stylus": "0.54.5",
+    "window-popup": "^1.0.1"
   },
   "description": "## Test Prelo Front-end Developer Intern",
   "main": "app.js",
